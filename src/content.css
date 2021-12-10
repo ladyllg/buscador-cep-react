@@ -1,0 +1,88 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#185ADB, #CD113B);
+}
+
+.title{
+    font-size: 85px;
+    color: #fff;
+    animation: flipTitle 2s;
+}
+
+.form-group{
+    background-color: #fff;
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+}
+
+.form-group input{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #000;
+    outline: none;
+    margin-right: 8px;
+}
+
+.form-group input::placeholder{
+    color: rgb(55, 55, 55);
+}
+
+.btn-search{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 50vh;
+    border-radius: 8px;
+    color: rgb(55, 55, 55);
+}
+
+.main h2{
+    margin: 16px 0;
+    font-size: 35px;
+}
+
+.main span{
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 620px){
+    .title{
+        font-size: 60px;
+    }
+    .main h2{
+        font-size: 25px;
+    }
+    .main{
+        width: 80%;
+        min-height: 250px;
+    }
+}
+
+@keyframes flipTitle {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+    
+}
